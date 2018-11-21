@@ -30,7 +30,7 @@ def kesha_maker(arr)
   result_arr = []
 
   arr.each do |word|
-    result_arr.push(word.slice(0, 1) + "$" + word.slice(3, word.length))
+    result_arr.push(word.slice(0, 2) + "$" + word.slice(3, word.length))
   end
 
   return result_arr
