@@ -22,6 +22,13 @@ def swap_elements(arr)
   arr
 end
 
+def swap_elements_from_to(arr, idx, destination_idx)
+  destination = arr[destination_idx]
+  arr[destination_idx] = arr[idx]
+  arr[idx] = destination
+  arr
+end
+
 def reverse_array(arr)
   arr.reverse
 end
