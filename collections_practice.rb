@@ -50,10 +50,6 @@ end
 
 def add_s(arr)
   arr.each_with_index.map do |word, idx|
-    if idx == 1
-      word
-    else
-      word + "s"
-    end
+    idx == 1 ? word : word + "s"
   end
 end
