@@ -26,8 +26,34 @@ def reverse_array(arr)
   arr.reverse
 end
 
+def kesha_maker(arr)
+  result_arr = []
 
+  arr.each do |word|
+    result_arr.push(word.slice(0, 1) + "$" + word.slice(3, word.length))
+  end
 
+  return result_arr
+end
 
+def find_a(arr)
+  arr.select do |word|
+    word.start_with?("a")
+  end
+end
 
+def sum_array(arr)
+  arr.inject do |sum, num|
+    sum + num
+  end
+end
 
+def add_s(arr)
+  arr.map do |word, idx|
+    if idx == 1
+      word
+    else
+      word + "s"
+    end
+  end
+end
