@@ -49,7 +49,7 @@ def sum_array(arr)
 end
 
 def add_s(arr)
-  arr.map do |word, idx|
+  arr.each_with_index.map do |word, idx|
     if idx == 1
       word
     else
